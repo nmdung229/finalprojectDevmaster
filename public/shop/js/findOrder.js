@@ -45,8 +45,16 @@ $( document ).ready(function() {
                 </td>
             </tr>
             <tr>
-                <td width="30%">Tổng số tiền :</td>
+                <td width="30%">Tạm tính :</td>
                 <td>${res.order.total}$</td>
+            </tr>
+             <tr>
+                <td width="25%">Giảm giá :</td>
+                <td>${res.order.discount}</td>
+            </tr>
+            <tr>
+                <td width="30%">Tổng số tiền :</td>
+                <td>${res.order.total - res.order.discount}$</td>
             </tr>
             <tr>
                 <td width="30%">Trạng thái :</td>
@@ -55,7 +63,7 @@ $( document ).ready(function() {
             </tbody>`;
                     $('.my_table').html(table);
                     $.each(res.list, function (index,val) {
-                        let row = `<p style="color: #fff0f0"; >${val.name} x ${val.qty} = ${val.price*val.qty}$ </p>`
+                        let row = `<p style="color: #fff0f0"; >${val.name} x ${val.qty} = ${val.price}$ </p>`
                         $('.prd-list').append(row);
                     });
                 }

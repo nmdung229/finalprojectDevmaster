@@ -73,7 +73,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-product-item">
                             <figure>
-                                <a href="#"><img src="{{ asset($r_product->image) }}" alt="{{ $r_product->slug }}"></a>
+                                <a href="{{ route('shop.productdetail', [ 'slug' => $r_product->slug, 'id' => $r_product->id ]) }}"><img src="{{ asset($r_product->image) }}" alt="{{ $r_product->slug }}"></a>
                                 <div class="p-status">new</div>
                             </figure>
                             <div class="product-text">

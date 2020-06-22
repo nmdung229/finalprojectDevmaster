@@ -11,7 +11,7 @@
  Target Server Version : 100411
  File Encoding         : 65001
 
- Date: 21/06/2020 15:58:09
+ Date: 22/06/2020 16:31:18
 */
 
 SET NAMES utf8mb4;
@@ -158,6 +158,12 @@ CREATE TABLE `coupons`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
+-- Records of coupons
+-- ----------------------------
+INSERT INTO `coupons` VALUES (1, 'SHOP-KM1', 1, 30, NULL, '2020-05-19 23:50:32', '2020-05-19 23:50:32');
+INSERT INTO `coupons` VALUES (2, 'SHOP-K2', 2, NULL, 50, '2020-05-19 23:52:27', '2020-05-19 23:52:27');
+
+-- ----------------------------
 -- Table structure for migrations
 -- ----------------------------
 DROP TABLE IF EXISTS `migrations`;
@@ -183,12 +189,15 @@ CREATE TABLE `order_detail`  (
   `price` int(11) NOT NULL,
   `qty` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of order_detail
 -- ----------------------------
 INSERT INTO `order_detail` VALUES (10, 'Iphone 7 Plus 32GB - NEW', 'uploads/product/1584949065_iphone-7-plus-gold-400x460-400x460.png', NULL, 0, 15, 30, 7990000, 1);
+INSERT INTO `order_detail` VALUES (11, 'Sleep Tank, C Logo', 'http://essentialshop.co/uploads/product/1592204931_38.jpg', 'CSTT7Y', 0, 16, 180, 60, 3);
+INSERT INTO `order_detail` VALUES (12, 'Expedition Baselayer Crew', 'http://essentialshop.co/uploads/product/1592193846_14.jpg', 'KEW1', 0, 16, 156, 74, 2);
+INSERT INTO `order_detail` VALUES (13, 'Nike Airmax 720', 'http://essentialshop.co/uploads/product/1592060457_air-max-720-shoe-NjKC7m.jpg', 'AM720', 0, 16, 142, 200, 1);
 
 -- ----------------------------
 -- Table structure for order_status
@@ -230,12 +239,13 @@ CREATE TABLE `orders`  (
   `created_at` timestamp(0) NULL DEFAULT NULL,
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
 INSERT INTO `orders` VALUES (15, 'DH-15-26052020', 'HCDUNG', 'hcdung2109@gmail.com', 'Tầng 6, Tòa CT Building , Đống Đa , HN', NULL, '0986346008', 0, 'Giao hàng ngoài 17h', NULL, 7990000, 0, 1, 0, '2020-05-26 06:59:42', '2020-06-11 08:37:08');
+INSERT INTO `orders` VALUES (16, 'DH-16-22062020', 'nguyen manh dung', 'dungnht2209@gmail.com', 'Ha Noi', NULL, '0123456789', 30, 'giay size 41', 'SHOP-KM1', 334, 0, 1, 0, '2020-06-22 09:20:00', '2020-06-22 09:20:00');
 
 -- ----------------------------
 -- Table structure for password_resets

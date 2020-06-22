@@ -20,23 +20,31 @@
             </thead>
             <tbody>
             <tr>
-                <td width="25%">Mã đơn hàng : </td>
+                <td width="30%">Mã đơn hàng : </td>
                 <td></td>
             </tr>
             <tr>
-                <td width="25%">Tên khách hàng :</td>
+                <td width="30%">Tên khách hàng :</td>
                 <td></td>
             </tr>
             <tr>
-                <td width="25%" ">Sản phẩm đã đặt :</td>
+                <td width="30%">Sản phẩm đã đặt :</td>
                 <td class="pdr-list"></td>
             </tr>
             <tr>
-                <td width="25%">Tổng số tiền :</td>
+                <td width="30%">Tạm tính: <p style="color: #fff;"></p></td>
                 <td></td>
             </tr>
             <tr>
-                <td width="25%">Trạng thái :</td>
+                <td width="30%">Giảm giá :</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td width="30%">Tổng tiền: <p style="color: #fff;"></p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td width="30%">Trạng thái :</td>
                 <td></td>
             </tr>
             </tbody>
