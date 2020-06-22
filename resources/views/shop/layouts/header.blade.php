@@ -80,7 +80,11 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li><a href="{{ route('shop.cart') }}">Cart</a></li>
+                    <li><a href="{{ route('shop.cart') }}">Cart</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ route('shop.checkOrder') }}">Check your order</a></li>
+                        </ul>
+                    </li>
                     <li><a href="{{ route('shop.article') }}">Blog</a></li>
                     <li><a href="contact">Contact</a></li>
                 </ul>
