@@ -288,16 +288,16 @@ class ShopController extends GeneralController
     public function findOrder($code)
     {
 
-        try {
-            $_order = Order::where(['code' => $code])->get();
-        } catch (\HttpRuntimeException $e) {
-            dd("catching this error");
-            return json_encode("Không tìm thấy đơn hàng !");
-         }
-        $order = $_order['0'];
-        if(!$order) {
+        $_order = Order::where(['code' => $code])->get();
+        if($_order->isEmpty()) {
+            return response()->json([
+                'status' => false,
+                'msg' => "Đơn hàng của bạn không tồn tại",
+            ]);
+        }
+        else {
+            $order = $_order['0'];
 
-        } else {
             $order_status = OrderStatus::find($order->order_status_id)->name;
 
             $list = OrderDetail::where(['order_id' => $order->id])->get();

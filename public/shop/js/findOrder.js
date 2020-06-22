@@ -18,7 +18,7 @@ $( document ).ready(function() {
            },
            success: function (res) {
                console.log(res);
-                if(res.status = true) {
+                if(res.status == true) {
                     let notif = `<div class="alert alert-success" role="alert">
                                     ${res.msg}
                                  </div>`;
@@ -46,7 +46,7 @@ $( document ).ready(function() {
             </tr>
             <tr>
                 <td width="30%">Tổng số tiền :</td>
-                <td>${res.order.total}</td>
+                <td>${res.order.total}$</td>
             </tr>
             <tr>
                 <td width="30%">Trạng thái :</td>
@@ -55,9 +55,16 @@ $( document ).ready(function() {
             </tbody>`;
                     $('.my_table').html(table);
                     $.each(res.list, function (index,val) {
-                        let row = `<p style="color: #fff0f0"; >${val.name} x ${val.qty} = ${val.price*val.qty} </p>`
+                        let row = `<p style="color: #fff0f0"; >${val.name} x ${val.qty} = ${val.price*val.qty}$ </p>`
                         $('.prd-list').append(row);
                     });
+                }
+                else if (res.status == false) {
+                    let notif = `<div class="alert alert-danger" role="alert">
+                                    ${res.msg}
+                                 </div>`;
+                    $('.noti').html('');
+                    $('.noti').html(notif);
                 }
            },
            error: function () {

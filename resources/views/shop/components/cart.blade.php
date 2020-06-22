@@ -75,7 +75,7 @@
 </div>
 
 <div class="shopping-method">
-    <h1>some thing here</h1>
+    <h1></h1>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -116,7 +116,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                            
+
                                 <td class="total">${{ $cart->totalPrice }}</td>
                                 <td class="sub-total">${{ $cart->discount }}</td>
                                 <td class="shipping">$10</td>

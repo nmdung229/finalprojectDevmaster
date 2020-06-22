@@ -102,10 +102,10 @@
                             </div>
                             <div class="Meta-box">
                                 <h2>{{ substr($product['item']->name, 0 ,20) . "..." }}</h2>
-                                <p>{{ $product['qty'] . ' x ' . $product['price'] }}$</p>
+                                <p>{{ $product['qty'] . ' x ' . $product['item']->sale }}$</p>
                             </div>
                             <div class="Price-box">
-                                <p>{{ $product['qty']*$product['price'] }}$</p>
+                                <p>{{ $product['price'] }}$</p>
                             </div>
                         </div>
                     @endforeach
