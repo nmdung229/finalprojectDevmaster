@@ -1,0 +1,432 @@
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.fixload:after{
+	clear: both;
+	content: ' ';
+	display: table;
+}
+#Sec-1{
+	overflow: hidden;
+}
+@font-face {
+	font-family: myfont;
+	src: url(Roboto-Italic.ttf);
+}
+body{
+	font-family: myfont;
+	background: #fbfbfb;
+}
+body h2,h3,h1,p{
+	margin: 0px;
+}
+.Left-text{
+	width: 50%;
+	float: left;
+}
+.Right-text{
+	width: 50%;
+	float: left;
+}
+body img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.Box-img{
+	position: relative;
+}
+.Text-pos{
+	position: absolute;
+	bottom: 5px;
+	width: 70%;
+	padding: 0 25px;
+}
+.Lane{
+	display: block;
+}
+.Text-pos a{
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+}
+.Set-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #0000000f;
+}
+.Text-pos p{
+	color: #fff;
+}
+.div-1{
+	width: 50%;
+	float: left;
+}
+.Post-top{
+	position: relative;
+}
+.Post-b-top .Text-pos {
+	position: absolute;
+	bottom: 21px;
+	width: 70%;
+	padding: 0 25px;
+}
+.Post-b-top img{
+	height: 25%;
+}
+.div-1{
+	position: relative;
+}
+.div-1 .Text-pos {
+	position: absolute;
+	bottom: 21px;
+	width: 87%;
+	padding: 0 25px;
+}
+.Left-text img{
+	height: 474px;
+}
+.div-1 .Text-pos a {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+}
+.pad-left{
+	padding-left: 13px;
+}
+.Post-top{
+	padding-bottom: 13px
+}
+.Box-img-left{
+	width: 100%;
+}
+.What-hot{
+	width: 30%;
+	float: left;
+}
+.pad-sec{
+	margin: 50px 0px;
+}
+.Post-in{
+	padding:15px 40px;
+	background: #fff;
+	border: 1px solid #00000021;
+}
+.Post-in h2 {
+	font-size: 36px;
+	line-height: 35px;
+	font-weight:300;
+	margin: 20px 0px;
+	color: #333;
+}
+.Post-in h3 {
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #000;
+}
+.under-line{
+	position: relative;
+	text-align: center;
+	margin: 0;
+	color: #000;
+	font-size: 18px;
+	line-height: 18pxl
+	font-weight:500;
+}
+.Get_bot{
+	margin: 50px 0px;
+}
+.List-post{
+	margin-bottom: 50px;
+}
+.under-line:after{
+	content: "";
+	display: block;
+	width: 40px;
+	height: 3px;
+	background: #f8e71c;
+	margin: 10px auto;
+}
+.What-hot-in{
+	background: #fff;
+	margin-left: 52px;
+	border: 1px solid #0000001c;
+	padding: 20px 25px;
+}
+.Img-post-right{
+	width: 30%;
+	float: left;
+}
+.Box-text-right{
+	width: 70%;
+	float: left;
+}
+.Box-text-right h2{
+	margin: 0px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.Box-text-right p{
+	margin: 0px;
+	font-weight: 400;
+	font-size: 12px;
+	padding-top: 11px;
+}
+.List-post-right{
+	margin: 25px 0px;
+}
+.social-1{
+	width: 15%;
+	float: left;
+	text-align: center;
+}
+.count-social{
+	width: 65%;
+	float: left;
+}
+#Sec-3{
+	background: #fff;
+	padding: 52px 0px;
+}
+.text-social{
+	width: 60%;
+	float: left;
+
+}
+.List-post-hot{
+	width: 33.33%;
+	float: left;
+	margin: 25px 0px;
+}
+.set-text{
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 500;
+	color: #666;
+}
+.Sub-social{
+	width: 20%;
+	float: left;
+}
+.List-social{
+	background: #3349af;
+	padding: 9px 0px;
+	margin: 13px 0px;
+}
+.List-social p{
+	margin: 0px;
+}
+.count-social span{
+	display: inline-block;
+	padding-right: 11px;
+}
+.List-social p  {
+	color: #fff;
+}
+.List-social span  i {
+	color: #fff;
+}
+.Border-n{
+	padding: 0 10px;
+	border-right: 1px solid #ffffff87;
+	border-left:  1px solid #ffffff87;
+}
+.Sub-social p{
+	text-align: center;
+}
+.Box-social{
+	background: #fff;
+}
+.Box-social{
+	background: #fff;
+	margin-left: 52px;
+	border: 1px solid #0000001c;
+	padding: 20px 25px;
+	margin-top: 55px;
+}
+.Meta-post{
+	padding: 15px;
+	border: 1px solid #00000036;
+}
+.W-in{
+	padding: 0px 30px;
+}
+.Meta-post h3{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 15px;
+	color: #999;
+}
+.Div-top {
+	margin-left: -13px;
+}
+.Set-box .Text-pos{
+	bottom: 30px;
+}
+.Meta-post h2{
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 33px;
+	color: #333;
+	line-height: 20px;
+	padding: 15px 0px;
+}
+.List-get{
+	width: 33.33%;
+	float: left;
+}
+.Margin-set {
+	margin-right: -28px;
+	margin-left: -28px;
+}
+.List-get-2{
+	width: 20%;
+	float: left;
+}
+.Div-bot .Text-pos a{
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+}
+.Div-bot .Text-pos{
+	position: absolute;
+	bottom: 7px !important;
+	width: 70%;
+	padding: 0 16px;
+}
+.Div-bot{
+	margin-left: -13px;
+	padding:10px 0px;
+}
+.List-img-bottom{
+	width: 25%;
+	float: left;
+}
+.List-img-bottom{
+	position: relative;
+}
+.Bor-in{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	top: 10;
+	border: 1px solid #ffffff78;
+	left: 25;
+	display:none;
+}
+.List-img-bottom:hover .Bor-in{
+	display: block;
+}
+.Box-out-img{
+	margin-left: -16px;
+}
+.Cen{
+	text-align: center;
+	padding:15px 0px;
+}
+.Cen p{
+	text-align: center;
+	font-size: 15px;
+	line-height: 29px;
+	font-weight: 400;
+	color: #111;
+}
+.Cen  strong{
+	text-align: center;
+	font-size: 15px;
+	line-height: 29px;
+	font-weight: 600;
+	color: #f8e71c;
+}
+/*
+Code chi tiet trang*/
+#sec-sing .Left-text{
+    width: 100%;
+}
+#sec-sing .Text-pos {
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+    padding: 0 0px;
+    background: #fff;
+}
+#sec-sing .Text-pos b  {
+    color: #fff;
+    padding:5px;
+    background: #000;
+    font-size: 10px;
+
+}
+#sec-sing .Text-pos  a{
+    color: #000;
+    font-size: 41px;
+    line-height: 50px;
+    font-weight: 400;
+}
+#sec-sing .Text-pos p{
+    color: #000;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.W-ter-sing {
+    padding: 0px;
+    border: none;
+}
+.W-ter-sing .W-in {
+    padding: 0px;
+    margin: 34px 0px;
+}
+.content b{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    color: #f8e71c;
+}
+.content p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 26px;
+    color: #222222;
+    padding:15px 0px;
+}
+.content img{
+    padding:15px 0px;
+}
+.Relate-sing h1{
+    text-align: center;
+}
+.mar-in2{
+    padding:0 6px;
+}
+.mar-in{
+    margin-left: -6px;
+    margin-right:  -6px;
+}
+.mar-in .Meta-post {
+    border: none;
+    padding:10px 0px;
+    text-align: left;
+}
+.mar-in .Meta-post h2{
+    margin-bottom: 15px;
+    padding: 4px 0px;
+}
+.Relate-sing{
+    border-top: 1px solid #00000026;
+    padding-top: 29px;
+    margin-top: 56px;
+}
