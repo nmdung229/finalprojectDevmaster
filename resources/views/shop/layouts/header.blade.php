@@ -80,8 +80,9 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li><a href="{{ route('shop.cart') }}">Cart</a>
+                    <li><a href="javascript:void(0)">Cart</a>
                         <ul class="sub-menu">
+                            <li><a href="{{ route('shop.cart') }}">View your cart</a></li>
                             <li><a href="{{ route('shop.checkOrder') }}">Check your order</a></li>
                         </ul>
                     </li>
@@ -105,13 +106,13 @@
             <div class="col-md-4 text-left text-lg-center">
                 <div class="header-item">
                     <img src="/shop/img/icons/voucher.png" alt="">
-                    <p>20% Student Discount</p>
+                    <p>15% Student Discount</p>
                 </div>
             </div>
             <div class="col-md-4 text-left text-xl-right">
                 <div class="header-item">
                     <img src="/shop/img/icons/sales.png" alt="">
-                    <p>30% off on tops. Use code: 30OFFTOP</p>
+                    <p>10% off in Summer. Use code: SUMMER01</p>
                 </div>
             </div>
         </div>
